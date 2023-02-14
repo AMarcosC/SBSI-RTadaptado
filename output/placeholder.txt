@@ -1,0 +1,2 @@
+Este arquivo tem a única função de manter a pasta 'output' no diretório raiz do repositório.
+Esta pasta é necessária para a execução do código.
