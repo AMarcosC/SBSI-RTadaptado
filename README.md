@@ -58,6 +58,14 @@ Em alguns casos, pode ser necessária a execução da seguinte forma
 python3 RaytracerMP-Adaptado.py
 ```
 
+De forma a executar os programas um após o outro, para aferição dos tempos de execução, o usuário pode utilizar o seguinte comando:
+
+
+```
+python3 RaytracerMP-Original.py;python3 RaytracerMP-Adaptado.py
+```
+
+
 Antes de se executar o programa, porém, é necessário que se definam algumas propriedades no arquivo `Raytracer-Config.yaml`. Este arquivo pode ser aberto com o editor de texto padrão do Ubuntu, como também pelo bloco de notas no Windows. As propriedades possuem um comentário explicando de forma resumida a sua destinação.
 
 O usuário deverá produzir dois arquivos, os modelos do telhado e da modelagem, em formato `.obj`. É possível fazer a modelagem no *Autodesk Revit*, exportar em `.fbx`, e converter este modelo para `.obj` no *Blender*, como explicado no trabalho. Caso o usuário queira apenas performar um teste, os modelos apresentados no artigo estão presentes na pasta `assets`. Para que se execute o modelo A1 como foi executado no artigo, é necessário que se utilizem os seguintes valores no arquivo `Raytracer-Config.yaml`:
@@ -65,7 +73,7 @@ O usuário deverá produzir dois arquivos, os modelos do telhado e da modelagem,
 ```
 DENSIDADE_PIXEL: 10
 AREA_DE_INTERESSE_OBJ: 'assets/A1-TEL.obj'  #referente ao telhado do modelo
-MODELAGEM_OBJ: 'assets/A16-PAR.obj'         #referente às paredes do modelo
+MODELAGEM_OBJ: 'assets/A1-PAR.obj'         #referente às paredes do modelo
 ```
 
 É importante salientar que por ser uma versão de testes, a inserção de valores fora do alcance do programa, ou incompreensíveis para ele, pode gerar erros na execução. O plano é inserir estas limitações nas variáveis em uma futura versão que possua uma interface gráfica.
