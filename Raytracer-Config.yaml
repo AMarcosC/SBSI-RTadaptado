@@ -1,0 +1,25 @@
+GERAL:
+  DENSIDADE_PIXEL: 10  #quantidade de pixels por unidade de medida adotada no modelo
+  K_D: 0.6  #coeficiente de difusão
+  K_A: 0.4  #coeficiente de iluminação ambiente
+
+MODELO:
+  AREA_DE_INTERESSE_OBJ: 'assets/A16-TEL.obj'  #arquivo .obj do telhado ou área de interesse
+  AREA_DE_INTERESSE_COR: [217,101,78,255] #cor RGBA da área de interesse
+  MODELAGEM_OBJ: 'assets/A16-PAR.obj' #arquivo .obj do resto da modelagem
+  MODELAGEM_COR: [97,83,80,255] #cor RGBA do resto da modelagem
+  OFFSET: 0  #valor em graus entre o norte do modelo e o plano de trabalho (eixo y)
+  FORRAMENTO: 2.0 #valor adotado de forramento para as bordas da imagem (recomenda-se um valor imediatamente maior à maior dimensão da placa utilizada)
+
+DADOS:
+  NOME_IMAGENS: 'Teste'  #sugestão: data da trajetória
+  NOME_AREA_BIN: 'area'  #nome do binário que armazenará a área de interesse  #sugestão: area
+  NOME_HEATMAP_BIN: 'heatmap' #nome do binário que armazenará o mapa de calor  #sugestão: heatmap
+
+TRAJETORIA: [
+#[elevação,azimute]  #não pode ter espaço depois da vírgula
+#[65.24,19.86],
+#[65.84,344.63],
+#[58.45,317.74],
+[47.01,303.09],
+]
